@@ -81,7 +81,7 @@ nav a.active {
   background: linear-gradient(135deg, #E0F7FA 0%, #FFFFFF 100%);
 }
 .hero h1 { font-size:3rem; color:#007BFF; margin-bottom:16px; }
-.hero .tagline { font-size:1.2rem; color:#114150; margin-bottom:24px; }
+.hero .tagline { font-size:1.2rem; color:#FF6F00; margin-bottom:24px; }
 .hero p { font-size:1.1rem; color:#333; margin-bottom:30px; }
 .btn-primary {
   text-decoration:none; background:#007BFF; color:#fff; padding:14px 28px;
@@ -259,6 +259,7 @@ footer p {
 ------------------- */
 @media(max-width:768px) { .timeline { gap:30px; } .timeline-item img { width:100%; } }
 @media(max-width:600px) { .hero h1{ font-size:2rem; } .hero p, .hero .tagline{ font-size:1rem; } .project{ padding:20px; margin:30px 20px; } nav{ flex-direction:column; gap:15px; } }
+
 
 
 
