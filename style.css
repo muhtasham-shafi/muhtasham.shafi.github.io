@@ -87,7 +87,7 @@ nav a.active {
   text-decoration:none; background:#007BFF; color:#fff; padding:14px 28px;
   border-radius:8px; font-weight:600; transition: background 0.3s, transform 0.2s;
 }
-.btn-primary:hover { background:#39FF14; color:#1E1E1E; transform:translateY(-3px); }
+.btn-primary:hover { background:#1a2885; color:#ffffff; transform:translateY(-3px); }
 
 /* -------------------
    PROJECT CARDS
@@ -259,3 +259,4 @@ footer p {
 ------------------- */
 @media(max-width:768px) { .timeline { gap:30px; } .timeline-item img { width:100%; } }
 @media(max-width:600px) { .hero h1{ font-size:2rem; } .hero p, .hero .tagline{ font-size:1rem; } .project{ padding:20px; margin:30px 20px; } nav{ flex-direction:column; gap:15px; } }
+
