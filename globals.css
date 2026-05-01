@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0a0e14;
+  --color-ink-2: #11161f;
+  --color-ink-3: #161d28;
+  --color-line: rgba(255, 255, 255, 0.08);
+  --color-line-strong: rgba(255, 255, 255, 0.16);
+
+  --color-cyan: #4cc9f0;
+  --color-cyan-glow: #6fe3ff;
+  --color-gold: #f4b740;
+  --color-gold-soft: #ffd27a;
+  --color-crimson: #ff5d5d;
+  --color-green: #61d095;
+
+  --color-text: #e8edf5;
+  --color-text-soft: #aab3c2;
+  --color-text-mute: #6f7a8c;
+
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+
+  --radius-xl: 18px;
+  --radius-sm: 10px;
+
+  --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-ink);
+    color: var(--color-text);
+    background-image: 
+      radial-gradient(1200px 600px at 80% -10%, rgba(76, 201, 240, 0.08), transparent 60%),
+      radial-gradient(900px 500px at -10% 30%, rgba(244, 183, 64, 0.05), transparent 60%);
+    background-attachment: fixed;
+  }
+}
+
+.grid-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse at center, black 50%, transparent 100%);
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 40s linear infinite;
+}
+
+@keyframes marquee {
+  to { transform: translateX(-50%); }
+}
+
+@keyframes pulse {
+  50% { opacity: .5; }
+}
