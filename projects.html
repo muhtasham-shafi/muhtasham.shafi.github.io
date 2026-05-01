@@ -1,80 +1,356 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects | Shafi</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Projects · Investor Deck — Muhtasham Shafi</title>
+<meta name="description" content="Six investor-ready prototypes: industrial robotic arm, drone delivery & rescue, AI smart home, flood bridge, NFC toll system, and smart irrigation." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-  </nav>
+<div class="grid-bg" aria-hidden="true"></div>
 
-  <main>
-    <h1>Projects</h1>
+<!-- NAV -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"></span>
+      <span>Muhtasham&nbsp;Shafi</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="journey.html">Journey</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <a href="index.html#contact" class="nav-cta">Hire / Invest</a>
+    <button class="nav-burger" aria-label="Menu"><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="journey.html">Journey</a>
+  <a href="index.html#contact">Contact</a>
+</div>
 
-    <!-- PROJECT CARD -->
-    <section class="project">
-      <img src="smart_irrigation.png" alt="Smart Irrigation System">
-      <h2>Smart Irrigation System – AI-Driven Agricultural Solution for Bangladesh</h2>
-
-      <p><strong>Project Overview:</strong> Water is the lifeline of agriculture, yet traditional irrigation in Bangladesh often leads to wastage and inefficiency. I designed a Smart Irrigation System combining soil moisture sensing, plant genetics, and AI to automate water usage, ensuring healthy crops while minimizing waste.</p>
-
-      <p><strong>Problem:</strong> Bangladesh faces multiple agricultural challenges:  
-        <ul>
-          <li><strong>Water Waste:</strong> Overwatering due to uniform schedules wastes water and increases costs.</li>
-          <li><strong>Drought & Scarcity:</strong> Water shortages reduce crop yield during dry seasons.</li>
-          <li><strong>Economic & Environmental:</strong> Excessive water increases energy use, lowers income, and harms sustainability.</li>
-        </ul>
-      </p>
-
-      <p><strong>Solution:</strong> The AI-driven system solves these problems through:</p>
-      <ul>
-        <li><strong>Plant-Specific Watering:</strong> Each plant receives water based on its genetic and environmental needs.</li>
-        <li><strong>Soil Moisture Sensing:</strong> Real-time sensors adjust irrigation automatically.</li>
-        <li><strong>Water Conservation & Storage:</strong> Excess water is stored for drought periods, supporting sustainability.</li>
-        <li><strong>AI Integration:</strong> The AI model learns from data to optimize irrigation efficiency over time.</li>
-      </ul>
-
-      <p><strong>Real-World Impact:</strong></p>
-      <ul>
-        <li><strong>Economic:</strong> Reduces water and energy costs, optimizes crop yield, supports Bangladesh’s agricultural economy.</li>
-        <li><strong>Environmental:</strong> Minimizes water waste, lowers carbon footprint.</li>
-        <li><strong>Renewable Energy Potential:</strong> Stored water can generate electricity for farms and rural communities.</li>
-      </ul>
-
-      <p><strong>Future Work:</strong> Next phases include harnessing irrigation water for electricity, scaling to industrial farms, and integrating with solar-powered IoT systems for global applications.</p>
-
-      <p><strong>Status:</strong> Completed</p>
-
-      <p><strong>Key Lessons & Reflections:</strong> Building this project taught me real-world problem-solving, iterative design, integrating AI with hardware, and documenting solutions so others can learn and replicate them.</p>
-      <p><strong>Future Work:</strong> Scaling, solar-powered IoT integration, global applications.</p>
-      <p><strong>Status:</strong> Completed</p>
-      <p><strong>Lessons:</strong> Learned problem-solving, iterative design, AI-hardware integration, and documentation for replication.</p>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-<footer>
-    <p><strong>Contact Me:</strong></p>
-    <p>
-      <a href="mailto:md.muhtasham.m.shafi@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a> |
-      <a href="tel:+8801711903180"><i class="fa-solid fa-phone"></i> Phone</a>
+<!-- PAGE HERO -->
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Investor deck · 06 projects</span>
+    <h1>Solving Bangladesh's<br><em>real</em> problems.</h1>
+    <p class="lede">
+      Every product below was built to fix a crisis Bangladeshis face daily —
+      factory inefficiency, port logistics, monsoon flooding, energy waste, and
+      gridlock. Prototypes exist. The science is sound. What turns these into
+      industrial-scale solutions — and high-return assets — is capital and the
+      right partners.
     </p>
-    <p>
-      <a href="https://www.linkedin.com/in/md-muhtasham-musharof-shafi-055a20317/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a> |
-      <a href="https://www.youtube.com/@MuhtashamShafi.07" target="_blank">
-  <i class="fa-brands fa-youtube"></i> YouTube
-</a>
-    </p>
-    <p>Company: Miracle Robotics</p>
-    <p>&copy; 2026 Md. Muhtasham Musharof Shafi</p>
-  </footer>
+  </div>
+</header>
+
+<!-- PROJECTS -->
+<section class="section">
+  <div class="container">
+
+    <!-- 01 ROBOTIC ARM -->
+    <article class="proj-card reveal-up">
+      <div class="proj-visual">
+        <span class="tag">Prototype ready</span>
+        <!-- IMG_PROJECT_01 -->
+        <img src="assets/img/p01-robotic-arm.jpg" alt="Industrial Robotic Arm" onerror="this.style.display='none'; this.parentNode.querySelector('.placeholder').style.display='block'">
+        <span class="placeholder" style="display:none">Image · 01 / Robotic Arm</span>
+      </div>
+      <div class="proj-body">
+        <div class="proj-id">01 — Industrial</div>
+        <h3 class="proj-title">Industrial Robotic Arm</h3>
+        <p class="proj-desc">A factory-grade, multi-axis programmable manipulator built to take over repetitive, hazardous, and precision-critical tasks on the assembly line. Engineered for Bangladesh's manufacturing boom — garments, pharma, electronics — with modular tooling for welding, sorting, packaging and quality inspection.</p>
+
+        <div class="metric-row">
+          <div class="metric">
+            <div class="metric-icon gold">
+              <!-- down arrow / cost -->
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+            </div>
+            <div class="metric-val">−40%</div>
+            <div class="metric-label">Long-term labour cost</div>
+          </div>
+          <div class="metric">
+            <div class="metric-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 17l6-6 4 4 8-8M14 7h7v7"/></svg>
+            </div>
+            <div class="metric-val">3×</div>
+            <div class="metric-label">Throughput uplift</div>
+          </div>
+          <div class="metric">
+            <div class="metric-icon green">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M5 19l3-3M16 8l3-3"/></svg>
+            </div>
+            <div class="metric-val">24 / 7</div>
+            <div class="metric-label">Continuous, zero fatigue</div>
+          </div>
+        </div>
+
+        <div class="proj-footer">
+          <span class="status"><span class="pulse"></span> Awaiting investment · scaling phase</span>
+          <a href="index.html#contact" class="btn btn-ghost">Invest <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 02 DRONE -->
+    <article class="proj-card reveal-up">
+      <div class="proj-visual">
+        <span class="tag">Flight-tested</span>
+        <!-- IMG_PROJECT_02 -->
+        <img src="assets/img/p02-drone.jpg" alt="Drone Delivery & Rescue System" onerror="this.style.display='none'; this.parentNode.querySelector('.placeholder').style.display='block'">
+        <span class="placeholder" style="display:none">Image · 02 / Drone Delivery &amp; Rescue</span>
+      </div>
+      <div class="proj-body">
+        <div class="proj-id">02 — Logistics &amp; Humanitarian</div>
+        <h3 class="proj-title">Drone Delivery &amp; Rescue System</h3>
+        <p class="proj-desc">A dual-purpose aerial fleet purpose-built for Bangladesh. Commercial mode: lift 5–10 kg cargo from Chittagong port to factories — bypassing highway congestion and theft risk. Humanitarian mode: airdrop aid and rescue children stranded by monsoon floods.</p>
+
+        <div class="metric-row">
+          <div class="metric">
+            <div class="metric-icon gold">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+            </div>
+            <div class="metric-val">−45%</div>
+            <div class="metric-label">Per-unit delivery cost</div>
+          </div>
+          <div class="metric">
+            <div class="metric-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg>
+            </div>
+            <div class="metric-val">−60%</div>
+            <div class="metric-label">CO₂ vs. diesel fleet</div>
+          </div>
+          <div class="metric">
+            <div class="metric-icon green">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 21s-7-4.35-7-10a7 7 0 0114 0c0 5.65-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg>
+            </div>
+            <div class="metric-val">∞</div>
+            <div class="metric-label">Lives saveable / monsoon</div>
+          </div>
+        </div>
+
+        <div class="proj-footer">
+          <span class="status"><span class="pulse"></span> Prototype flight-tested · seeking series A</span>
+          <a href="index.html#contact" class="btn btn-ghost">Invest <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 03 SMART HOME -->
+    <article class="proj-card reveal-up">
+      <div class="proj-visual">
+        <span class="tag">Operational</span>
+        <!-- IMG_PROJECT_03 -->
+        <img src="assets/img/p03-smart-home.jpg" alt="AI-Powered Smart Home System" onerror="this.style.display='none'; this.parentNode.querySelector('.placeholder').style.display='block'">
+        <span class="placeholder" style="display:none">Image · 03 / Smart Home</span>
+      </div>
+      <div class="proj-body">
+        <div class="proj-id">03 — Consumer / Real Estate</div>
+        <h3 class="proj-title">AI-Powered Smart Home System</h3>
+        <p class="proj-desc">Every appliance — lights, fans, AC, TV, locks — gets a layer of real intelligence. Room-presence sensors plus each resident's daily schedule autonomously manage the household. Lights dim when rooms empty. AC pre-cools bedrooms. Standby kicks in when nobody's home. Built for Bangladesh's booming real estate.</p>
+
+        <div class="metric-row">
+          <div class="metric">
+            <div class="metric-icon gold">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+            </div>
+            <div class="metric-val">−40%</div>
+            <div class="metric-label">Electricity bills</div>
+          </div>
+          <div class="metric">
+            <div class="metric-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 12l2-2 4 4 8-8 4 4"/></svg>
+            </div>
+            <div class="metric-val">2.1 yr</div>
+            <div class="metric-label">Average payback</div>
+          </div>
+          <div class="metric">
+            <div class="metric-icon green">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 2a8 8 0 018 8c0 5-8 12-8 12s-8-7-8-12a8 8 0 018-8z"/><path d="M9 11h6"/></svg>
+            </div>
+            <div class="metric-val">−1.2t</div>
+            <div class="metric-label">CO₂ / household / yr</div>
+          </div>
+        </div>
+
+        <div class="proj-footer">
+          <span class="status"><span class="pulse"></span> Hardware miniaturisation in progress</span>
+          <a href="index.html#contact" class="btn btn-ghost">Invest <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 04 SMART IRRIGATION -->
+    <article class="proj-card reveal-up">
+      <div class="proj-visual">
+        <span class="tag">Investor priority</span>
+        <!-- IMG_PROJECT_04 -->
+        <img src="assets/img/p04-irrigation.jpg" alt="Smart Irrigation System" onerror="this.style.display='none'; this.parentNode.querySelector('.placeholder').style.display='block'">
+        <span class="placeholder" style="display:none">Image · 04 / Smart Irrigation</span>
+      </div>
+      <div class="proj-body">
+        <div class="proj-id">04 — AgriTech</div>
+        <h3 class="proj-title">AI Smart Irrigation System</h3>
+        <p class="proj-desc">Real-time soil moisture sensors per-plant, per-field — automatically irrigating only when and where needed. Every farmer's field, every plant species is logged in a central database. An AI layer suggests optimal water volume and soil composition per species, and the irrigation system acts on those suggestions. Currently the lead candidate for commercialisation.</p>
+
+        <div class="metric-row">
+          <div class="metric">
+            <div class="metric-icon gold">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 2C8 7 4 11 4 15a8 8 0 0016 0c0-4-4-8-8-13z"/></svg>
+            </div>
+            <div class="metric-val">−50%</div>
+            <div class="metric-label">Water usage</div>
+          </div>
+          <div class="metric">
+            <div class="metric-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 17l6-6 4 4 8-8M14 7h7v7"/></svg>
+            </div>
+            <div class="metric-val">+30%</div>
+            <div class="metric-label">Crop yield uplift</div>
+          </div>
+          <div class="metric">
+            <div class="metric-icon green">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/><path d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <div class="metric-val">Live</div>
+            <div class="metric-label">Per-plant analytics</div>
+          </div>
+        </div>
+
+        <div class="proj-footer">
+          <span class="status"><span class="pulse"></span> Awaiting investment for commercial rollout</span>
+          <a href="index.html#contact" class="btn btn-gold">Lead investor <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 05 FLOOD BRIDGE -->
+    <article class="proj-card reveal-up">
+      <div class="proj-visual">
+        <span class="tag">Civil infrastructure</span>
+        <!-- IMG_PROJECT_05 -->
+        <img src="assets/img/p05-flood-bridge.jpg" alt="Floor-Lifting Flood Bridge" onerror="this.style.display='none'; this.parentNode.querySelector('.placeholder').style.display='block'">
+        <span class="placeholder" style="display:none">Image · 05 / Flood Bridge</span>
+      </div>
+      <div class="proj-body">
+        <div class="proj-id">05A — Climate Resilience</div>
+        <h3 class="proj-title">Floor-Lifting Flood Bridge</h3>
+        <p class="proj-desc">A hydraulic bridge deck that automatically rises as floodwaters swell — keeping critical road links open when they matter most. Sensors continuously monitor water levels and trigger incremental lift actuators, maintaining clearance for emergency vehicles, supply trucks and evacuees during monsoon floods.</p>
+
+        <div class="metric-row">
+          <div class="metric">
+            <div class="metric-icon gold">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 2v6M12 22v-6M4 12h6M14 12h6M5 5l4 4M15 15l4 4M5 19l4-4M15 9l4-4"/></svg>
+            </div>
+            <div class="metric-val">৳B</div>
+            <div class="metric-label">Economic loss avoided</div>
+          </div>
+          <div class="metric">
+            <div class="metric-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 12c3-4 6-4 9 0s6 4 9 0M3 18c3-4 6-4 9 0s6 4 9 0"/></svg>
+            </div>
+            <div class="metric-val">Auto</div>
+            <div class="metric-label">Sensor-triggered lift</div>
+          </div>
+          <div class="metric">
+            <div class="metric-icon green">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 2L2 22h20L12 2z"/><path d="M12 9v6M12 18v.5"/></svg>
+            </div>
+            <div class="metric-val">100%</div>
+            <div class="metric-label">Route uptime in monsoon</div>
+          </div>
+        </div>
+
+        <div class="proj-footer">
+          <span class="status"><span class="pulse"></span> Prototype design complete · seeking civil partner</span>
+          <a href="index.html#contact" class="btn btn-ghost">Invest <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 06 NFC TOLL -->
+    <article class="proj-card reveal-up">
+      <div class="proj-visual">
+        <span class="tag">Recurring revenue</span>
+        <!-- IMG_PROJECT_06 -->
+        <img src="assets/img/p06-nfc-toll.jpg" alt="NFC Smart Toll System" onerror="this.style.display='none'; this.parentNode.querySelector('.placeholder').style.display='block'">
+        <span class="placeholder" style="display:none">Image · 06 / NFC Smart Toll</span>
+      </div>
+      <div class="proj-body">
+        <div class="proj-id">05B — Smart Mobility</div>
+        <h3 class="proj-title">NFC Smart Toll System</h3>
+        <p class="proj-desc">Bangladesh's tollbooths are some of the worst traffic bottlenecks on earth. Our pre-loaded tap-and-go NFC card system lets vehicles pass through without stopping — compressing a 3-minute transaction to under 3 seconds. Plug-and-play with existing infrastructure, supports prepaid and postpaid, and generates rich traffic-flow data for city planners.</p>
+
+        <div class="metric-row">
+          <div class="metric">
+            <div class="metric-icon gold">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </div>
+            <div class="metric-val">3s</div>
+            <div class="metric-label">Per-vehicle transaction</div>
+          </div>
+          <div class="metric">
+            <div class="metric-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 12h18M3 6h18M3 18h12"/></svg>
+            </div>
+            <div class="metric-val">−85%</div>
+            <div class="metric-label">Plaza queue length</div>
+          </div>
+          <div class="metric">
+            <div class="metric-icon green">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 1v22M5 8h11a3 3 0 010 6H8a3 3 0 000 6h11"/></svg>
+            </div>
+            <div class="metric-val">$$$</div>
+            <div class="metric-label">Predictable recurring rev.</div>
+          </div>
+        </div>
+
+        <div class="proj-footer">
+          <span class="status"><span class="pulse"></span> Prototype ready · seeking institutional partner</span>
+          <a href="index.html#contact" class="btn btn-ghost">Invest <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </article>
+
+    <!-- INVESTOR CLOSE -->
+    <div class="investor-banner reveal-up" style="margin-top:48px">
+      <div>
+        <span class="eyebrow" style="color:var(--gold)">Closing</span>
+        <h3>Capital becomes infrastructure.</h3>
+        <p style="max-width:60ch; margin-top:12px">
+          Every project here was built to solve a crisis Bangladeshis face daily.
+          Prototypes exist. The science is sound. What turns these innovations into
+          industry-scale solutions — and high-return assets for investors — is
+          capital, manufacturing resources, and the right partners. Join me in
+          building the infrastructure of tomorrow's Bangladesh.
+        </p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:12px; align-items:flex-end">
+        <a href="index.html#contact" class="btn btn-gold">Become an investor <span class="arrow">→</span></a>
+        <a href="journey.html" class="btn btn-ghost">My journey <span class="arrow">→</span></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container" style="display:flex; justify-content:space-between; align-items:center; gap:24px; flex-wrap:wrap; width:100%">
+    <span>© <span id="year"></span> Muhtasham Shafi · Miracle Robotics</span>
+    <span>Designed &amp; built in Dhaka 🇧🇩</span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>
